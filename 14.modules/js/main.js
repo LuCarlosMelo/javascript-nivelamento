@@ -1,16 +1,30 @@
-//import * as nb from './numbers.js';
-//import Prod from './product.js';
-import { sum, round } from './numbers.js';
-import Product from './product.js';
-
-//console.log(nb.sum(3, 4));
-//console.log(nb.round(2.3456, 3));
-
-//const p1 = new Prod("Computador", 3000.0, 10);
-
-console.log(sum(3, 4));
-console.log(round(2.3456, 3));
-
-const p1 = new Product("Computador", 3000.0, 10);
-
-console.log(p1);
+function dizerOla() {
+    console.log("Ola!");
+  }
+  
+  function dizerBomDia(nome) {
+    console.log(`Bom dia ${nome}!`);
+  }
+  
+  function dizerBoaTarde(nome) {
+    console.log(`Boa tarde ${nome}!`);
+  }
+  
+  function dizerBoaNoite(nome) {
+    console.log(`Boa noite ${nome}!`);
+  }
+  
+  //setTimeout(dizerOla, 2000);
+  
+  setTimeout(() => {
+    dizerBomDia("Maria");
+    setTimeout(() => {
+      dizerBoaTarde("Joao");
+      setTimeout(() => {
+        dizerBoaNoite("Ana");
+      }, 1000);
+    }, 1000);
+  }, 1000);
+  
+  console.log("A");
+  console.log("B");
